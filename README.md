@@ -10,6 +10,7 @@ Creating your own DNS server will allow you to control your network's domain nam
 - Reduced Risk of Malware/Phishing 
 
 Having a DNS Server is an effective method of reducing unnecessary ads, trackers, and the unregulated expanse of the Internet. This project can automate certain security practices using enforced rules, filters, and blocklists. 
+
 <h2> Wireshark </h2>
 Wireshark is a packet analyzer. I can select the type of network traffic I want to monitor. In my case, I am viewing my ethernet connection and all the packets that are coming through it. For this project, I will be reviewing the DNS responses to demonstrate a proof of concept. Having your own DNS server can provide better privacy and security and reduce the attack surface of your home network.
 <b> </b>
@@ -49,7 +50,7 @@ Here are the details (answer) of the query response. Notice that the highlighted
 
 <img src="https://i.imgur.com/MVAe3yA.png" height="80%" width="80%" alt="Wireshark 5"/>
 
-<h2>Resources and Supplies Used</h2>
+<h2>Supplies Used</h2>
 
 - <b>Raspberry Pi 5</b>
 - <b>Mini SD Card</b>
@@ -57,7 +58,7 @@ Here are the details (answer) of the query response. Notice that the highlighted
 - <b>Computer</b>
 - <b>All-in-One Modem</b> - I would recommend buying third-party equipment so you don't run into roadblocks like I did. Some routers provided by your ISP will block features such as manually adding DNS server addresses. This forces me to set the DNS address numbers manually on each device that joins my network.
 
-<h2>DNS Server Setup</h2>
+<h2>Setup DNS Server</h2>
 
 <b>I will avoid showing how I set up my Raspberry Pi as there are many tutorials that anyone can watch on YouTube. You will have to SSH into the Pi to complete the DNS server setup. Just make sure you use the following command to get your Raspberry Pi updated with the latest updates/patches!</b>
 
@@ -116,7 +117,7 @@ Since my ISP does not allow me to update the DNS settings of the provided all-in
 
 
 
-<b>Filters</b>
+<b>Filters Used</b>
 
 - DNS Blocklists - I can block individual DNS addresses or choose some of the provided lists that are curated for filtering out commonly known phishing sites.
 - DNS Allowlists - I can allow certain DNS addresses if I am running tighter security on my network.
